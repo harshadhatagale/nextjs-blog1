@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.nav.active{
+    flex-direction: column;
+    height: 100vh;
+}
+.nav.active .logo_ham{
+    height: 80px;
+}
+.links.active{
+    display: flex;
+    flex-direction: column;
+}
+.links.active ul{
+    size: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 1.5em;
+    width: 100vw;
+}
+.hamburger.active .line{
+    transition: 0.5s;
+}
+.hamburger.active .line:nth-child(2){
+    display: none;
+}
+.hamburger.active .line:nth-child(1){
+    rotate: 45deg;
+    translate: 0 7px;
+}
+.hamburger.active .line:nth-child(3){
+    rotate: -45deg;
+    translate: 0 -7px;
+}
