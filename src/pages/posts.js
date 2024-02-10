@@ -1,5 +1,7 @@
 import React from 'react'
 import prisma from '../../lib/prisma'
+
+
 export default function Posts({posts}) {
   return (
     <div>
@@ -8,16 +10,16 @@ export default function Posts({posts}) {
             <div key={Post.id} className="bg-black text-white">
                 <p>{Post.title}</p>
                 <p>{Post.content}</p>
-                <p>{Post.author}</p>
             </div>
-        ))}
+        ))};
     </div>
   )
 }
+
 export async function getStaticProps(){
-    const posts = await prisma.Post.findMany();
+    const posts= await prisma.Post.findMany();
+    console.log(posts);
     return{
         props: {posts},
-        revalidate:10,
     };
 }
