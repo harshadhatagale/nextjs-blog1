@@ -22,7 +22,7 @@ export default function Nav() {
             <div className="fle w-8 border-2 border-black-900 rounded-md border-5 h-6">
               <div className=""></div>
             </div>
-            <div className={`${isNavOpen ? "active":""} hamburger cursor-pointer  :hidden`} onClick={OpenNav}>
+            <div className={`${isNavOpen ? "active":""} hamburger cursor-pointer  hidden`} onClick={OpenNav}>
               <div className="line w-8 h-1.5 bg-black m-2 rounded-md"></div>
               <div className="line w-8 h-1.5 bg-black m-2 rounded-md"></div>
               <div className="line w-8 h-1.5 bg-black m-2 rounded-md"></div>
