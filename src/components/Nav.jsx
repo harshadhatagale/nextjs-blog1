@@ -20,7 +20,7 @@ export default function Nav() {
          <Link href="/" className={`${roboto.className} logo transition-all `}>Coder.Pro</Link>
      </div>
      <div className="flex items-center justify-center gap-x-2">
-     <div className={`${isNavOpen ? "active":""} mr-8 hamburger cursor-pointer md:hidden`} onClick={OpenNav}>
+     <div className={`sm:${isNavOpen ? "active":""} mr-8 hamburger cursor-pointer md:hidden`} onClick={OpenNav}>
        <div className="line w-8 h-1.5 bg-black m-2 dark:bg-white rounded-md"></div>
        <div className="line w-8 h-1.5 bg-black m-2 dark:bg-white rounded-md"></div>
        <div className="line w-8 h-1.5 bg-black m-2 dark:bg-white rounded-md"></div>
