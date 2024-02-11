@@ -14,7 +14,9 @@ body{
     flex-direction: column;
     height: 100vh;
 }
-
+.nav{
+    transition: 0.3s ease-out;
+}
 .nav.active .logo_ham{
     height: 20px;
 }
